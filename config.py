@@ -9,7 +9,7 @@ TG_USER_ID = None  # int (1234567890) or None
 EXCLUDED_TOKENS = ['OP', 'ARB', 'ETH']
 
 # TASKS
-from tasks import * 
+from tasks import *
 
 SHUFFLE_WALLETS = True
 PAUSE_BETWEEN_WALLETS = [40, 100]
@@ -20,7 +20,7 @@ WAIT_FOR_RECEIPT = True     # Если True, будет ждать получе�
 
 
 # STARGATE BRIDGE
-STARGATE_AMOUNT = ('72', '95') # Сумма в количестве - (0.01, 0.02), в процентах - ("10", "20")
+STARGATE_AMOUNT = ('95', '95') # Сумма в количестве - (0.01, 0.02), в процентах - ("10", "20")
 STARGATE_CHAINS = [1, 2] # Arbitrum -> 1, Base -> 2, Optimism -> 3
 STARGATE_TOKENS = ['ETH', 'ETH'] # ETH
 L0_BRIDGE_COUNT = 1 # Количество бриджей для одного запуска
@@ -109,20 +109,20 @@ class RandomDailyTxConfig:
 
 
 class DisperseChainsSettings:
-    base_chain = ['UNICHAIN']  # Сеть из которой будет происходить рассылка
-    to_chains = [ 'SONEIUM']
-    amount_to_bride = [0.00007, 0.0001]  # Сколько эфира бриджить для каждой сети
+    base_chain = ['BASE']  # Сеть из которой будет происходить рассылка
+    to_chains = [ 'OP','MODE','INK','UNICHAIN','SONEIUM', 'LISK']
+    amount_to_bride = [0.0009, 0.001]  # Сколько эфира бриджить для каждой сети
 
     min_balance_in_chains = {
-        'BASE': 0.00007,
-        'OP': 0.00007,
-        'LISK': 0.00007,
-        'UNICHAIN': 0.00007,
-        'MODE': 0.00007,
-        'ZORA': 0.00007,
-        'INK': 0.00007,
-        'SONEIUM': 0.00007,
-        'SWELL': 0.00007,
+        'OP': 0.0009,
+        'BASE': 0.0009,
+        'MODE': 0.0009,
+        'INK': 0.0009,
+        'UNICHAIN': 0.0009,
+        'SONEIUM': 0.0009,
+        'LISK': 0.0009,
+        'ZORA': 0.0009,
+        'SWELL': 0.0009,
     }
 
 
@@ -288,6 +288,6 @@ class OKXSettings:
 
 
 
-# ========================= SCRIPT INFO ========================= 
+# ========================= SCRIPT INFO =========================
 
 from src.utils.script_info import *
