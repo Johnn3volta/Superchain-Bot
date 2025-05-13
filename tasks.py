@@ -3,7 +3,7 @@
 # --- Superchain settings -- #
 # Выполнение транзакций по отдельным чейнам, по спискам активностей из RandomDailyTxConfig
 
-TASKS = ["MODE_RANDOM_TX"]
+TASKS = ["STARGATE_BRIDGE", "BASE_RANDOM_TX"]
 
 TEST = [
     ["BASE_RANDOM_TX"]

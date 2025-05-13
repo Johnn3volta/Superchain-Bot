@@ -21,7 +21,7 @@ WAIT_FOR_RECEIPT = True     # Если True, будет ждать получе�
 
 # STARGATE BRIDGE
 STARGATE_AMOUNT = ('72', '95') # Сумма в количестве - (0.01, 0.02), в процентах - ("10", "20")
-STARGATE_CHAINS = [3, 2] # Arbitrum -> 1, Base -> 2, Optimism -> 3
+STARGATE_CHAINS = [1, 2] # Arbitrum -> 1, Base -> 2, Optimism -> 3
 STARGATE_TOKENS = ['ETH', 'ETH'] # ETH
 L0_BRIDGE_COUNT = 1 # Количество бриджей для одного запуска
 
