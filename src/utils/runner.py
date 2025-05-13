@@ -518,7 +518,7 @@ async def process_swap_all_to_eth(route: Route, chain: Chain) -> Optional[bool]:
 
     for token in token_list:
         i = 0
-        if token == 'ETH':
+        if token in EXCLUDED_TOKENS:
             continue
 
         if token == 'WETH':
